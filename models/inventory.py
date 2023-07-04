@@ -7,5 +7,8 @@ class CreateInventory(BaseModel):
     category: str
 
 
-class ListInventory(BaseModel):
-    data: list[CreateInventory]
+class GetInventory(BaseModel):
+    _id: str
+    name: str
+    price: float
+    category: str

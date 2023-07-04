@@ -10,6 +10,4 @@ app.include_router(inventory.router)
 
 @app.get("/healthcheck", tags=["healthcheck"])
 async def healthcheck():
-    return {
-        "healthcheck": "oksasdasaa"
-    }
+    return {"healthcheck": "oksasdasaa"}
